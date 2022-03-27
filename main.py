@@ -14,12 +14,12 @@ class main():
         username = self.driver.find_element_by_xpath(
             '/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input')
         username.click()
-        username.send_keys('vishesh_kondaveeti')
+        username.send_keys(str(input('please  give your username:')))
 
         password = self.driver.find_element_by_xpath(
             '/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input')
         password.click()
-        password.send_keys('kASPAR123')
+        password.send_keys(str(input('(NOTE: This will not be recorded by us) please give your password:')))
 
         loginbut = self.driver.find_element_by_xpath(
             '/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[3]')
@@ -44,7 +44,7 @@ class main():
         sbut.click()
         time.sleep(5)
         sbar = self.driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/div[1]/div/div[2]/input')
-        sbar.send_keys('rakeshchowdharyn')
+        sbar.send_keys(str(input('name of person you want to spam:')))
         time.sleep(3)
         selr = self.driver.find_element_by_xpath(
             '/html/body/div[5]/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div')
